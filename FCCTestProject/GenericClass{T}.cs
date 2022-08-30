@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestProject
+﻿namespace TestProject
 {
     public class GenericClass<T>
     {
-        public void Method()
+        public void CoveredMethod()
         {
+        }
 
+        public void UncoveredMethod()
+        {
         }
     }
 }

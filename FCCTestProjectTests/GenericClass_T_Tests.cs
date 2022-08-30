@@ -1,19 +1,15 @@
 ﻿using Xunit;
-using TestProject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TestProject.Tests
 {
     public class GenericClass_T_Tests
     {
-        [Fact()]
-        public void MethodTest()
+        [Fact]
+        public void CoveredMethodTest()
         {
-            Assert.True(false, "This test needs an implementation");
+            GenericClass<int> sut = new();
+
+            sut.CoveredMethod();
         }
     }
 }

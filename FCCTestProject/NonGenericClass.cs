@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TestProject
+﻿namespace TestProject
 {
     public class NonGenericClass
     {
-        public void Method()
+        public void CoveredMethod()
         {
         }
 
-        public async Task MethodAsync()
+        public void UncoveredMethod()
         {
-            await Task.Run(Method);
         }
     }
 }
